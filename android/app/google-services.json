@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "41481685317",
+    "project_id": "shoesapp-d0a52",
+    "storage_bucket": "shoesapp-d0a52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41481685317:android:bc98095d1e218d8143162c",
+        "android_client_info": {
+          "package_name": "com.example.codigo6_states"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41481685317-n1orcda3vo7a56en5u4mrojkq4kmhf15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0WGCkV7vdPKvEi0Uf05xrR2sv9kLv-o0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41481685317-mf718na1gsndh0akte85ie08h1ktcvp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41481685317:android:cea88dbe161196b743162c",
+        "android_client_info": {
+          "package_name": "pe.marketshoes.codigo6_shoesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41481685317-0nc7hk340j1c72tvlq1pf90d8qon8ali.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pe.marketshoes.codigo6_shoesapp",
+            "certificate_hash": "4e6e0ffd143190214cf97608ad10501c2008cd26"
+          }
+        },
+        {
+          "client_id": "41481685317-n1orcda3vo7a56en5u4mrojkq4kmhf15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0WGCkV7vdPKvEi0Uf05xrR2sv9kLv-o0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41481685317-mf718na1gsndh0akte85ie08h1ktcvp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41481685317:android:b7593d416a88563a43162c",
+        "android_client_info": {
+          "package_name": "rdanulaciones.shoesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41481685317-n1orcda3vo7a56en5u4mrojkq4kmhf15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0WGCkV7vdPKvEi0Uf05xrR2sv9kLv-o0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41481685317-mf718na1gsndh0akte85ie08h1ktcvp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
