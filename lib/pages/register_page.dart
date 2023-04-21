@@ -1,13 +1,22 @@
-import 'package:codigo6_states/providers/example_provider.dart';
-import 'package:codigo6_states/providers/person_provider.dart';
+import 'package:codigo6_states/pages/register_bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
-class RegisterPage extends StatelessWidget {
+class RegisterPage extends StatefulWidget {
+  @override
+  State<RegisterPage> createState() => _RegisterPageState();
+}
+
+class _RegisterPageState extends State<RegisterPage> {
+  final RegisterBloc registerBloc = RegisterBloc();
+
+  @override
+  void dispose() {
+    super.dispose();
+    registerBloc.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    print("BUILDDDDDDDDDDDDDDDDDDDDDDDDD!!!!!");
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.pink,
@@ -21,51 +30,32 @@ class RegisterPage extends StatelessWidget {
             const SizedBox(
               height: 12.0,
             ),
+            StreamBuilder(
+              stream: registerBloc.stream,
+              builder: (BuildContext context, AsyncSnapshot snap) {
+                if (snap.hasData) {
+                  return Text(
+                    snap.data.toString(),
+                    style: TextStyle(
+                      fontSize: 40.0,
+                    ),
+                  );
+                }
+                return Text(
+                  "0",
+                  style: TextStyle(
+                    fontSize: 40.0,
+                  ),
+                );
+              },
+            ),
             ElevatedButton(
               onPressed: () {
-                // exampleProvider.contador = 300;
-                // exampleProvider.cambiarContador(6);
-
-                // ExampleProvider exampleProvider =
-                //     Provider.of<ExampleProvider>(context, listen: false);
-                // exampleProvider.agregaContador();
-
-                // Provider.of<ExampleProvider>(context, listen: false)
-                //     .agregaContador();
-
-                //context.read<ExampleProvider>().agregaContador();
-
-                PersonProvider personProvider =
-                    Provider.of<PersonProvider>(context, listen: false);
-                personProvider.addPerson("Juan Montes Tapia");
+                registerBloc.addCounter(IncrementEvent(1));
               },
               child: const Text(
                 "Registrar",
               ),
-            ),
-            // Text(
-            //   context.watch<ExampleProvider>().contador.toString(),
-            // ),
-
-            Consumer<ExampleProvider>(
-              builder: (context, provider, _) {
-                return Text(
-                  provider.contador.toString(),
-                  style: TextStyle(
-                    fontSize: 30.0,
-                  ),
-                );
-              },
-            ),
-            Consumer<ExampleProvider>(
-              builder: (context, provider, _) {
-                return Text(
-                  provider.contador.toString(),
-                  style: TextStyle(
-                    fontSize: 30.0,
-                  ),
-                );
-              },
             ),
           ],
         ),
