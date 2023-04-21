@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-        title: Text("Listado de items"),
+        title: const Text("Listado de items"),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
@@ -24,11 +24,11 @@ class HomePage extends StatelessWidget {
         children: [
           ListTile(
             title: Text("Nombre del item"),
-            subtitle: Text("Descripcion del item"),
+            subtitle: Text("Descripción del item"),
           ),
           ListTile(
             title: Text("Nombre del item"),
-            subtitle: Text("Descripcion del item"),
+            subtitle: Text("Descripción del item"),
           ),
         ],
       ),
